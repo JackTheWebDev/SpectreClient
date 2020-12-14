@@ -28,7 +28,8 @@ import com.jagrosh.discordipc.exceptions.NoDiscordClientException;
 
 public class DiscordPresence {
 
-    private IPCClient client = new IPCClient(412963310867054602L);
+    private IPCClient client = new IPCClient(787833842441388072L);
+
 
     public void load() {
         if (Settings.DISCORD_RP) {
