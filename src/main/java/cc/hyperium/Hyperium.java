@@ -226,7 +226,7 @@ public class Hyperium {
             LOGGER.info("[Hyperium] Started!");
 
             // Set the window title
-            Display.setTitle("Hyperium " + Metadata.getVersion());
+            Display.setTitle("Spectre Client " + Metadata.getVersion()); // Changed title to spectre client
 
             SplashProgress.setProgress(8, I18n.format("splashprogress.registeringconfiguration"));
 
@@ -283,7 +283,7 @@ public class Hyperium {
             // Print every loaded addon
             collectAddons();
 
-            LOGGER.info("Hyperium loaded in {} seconds", (System.currentTimeMillis() - launchTime) / 1000F);
+            LOGGER.info("Spectre Client loaded in {} seconds", (System.currentTimeMillis() - launchTime) / 1000F); // Changed to spectre client
         } catch (Throwable t) {
             // If an issue is caught, crash the game
             Minecraft.getMinecraft().crashed(new CrashReport("Hyperium Startup Failure", t));
