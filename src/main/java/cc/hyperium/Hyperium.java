@@ -57,6 +57,7 @@ import cc.hyperium.utils.UpdateUtils;
 import cc.hyperium.utils.mods.AddonCheckerUtil;
 import cc.hyperium.utils.mods.CompactChat;
 import cc.hyperium.utils.mods.FPSLimiter;
+import com.chattriggers.ctjs.commands.Command;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.crash.CrashReport;
@@ -311,6 +312,7 @@ public class Hyperium {
         hyperiumCommandHandler.registerCommand(new CommandPing());
         hyperiumCommandHandler.registerCommand(new CommandStats());
         hyperiumCommandHandler.registerCommand(new CustomLevelheadCommand());
+        hyperiumCommandHandler.registerCommand(new CommandHi()); /* Added 12/15/2020 By JackTheWebDev */
     }
 
     /**

@@ -22,7 +22,7 @@ import cc.hyperium.Hyperium;
 import static cc.hyperium.config.Category.*;
 
 /*
- * Created by Cubxity on 03/06/2018
+ * Created by Cubxity on 03/06/2018x
  */
 public class Settings {
 

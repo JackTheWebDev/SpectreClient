@@ -34,6 +34,8 @@ public class RPCUpdater {
 
     private final IPCClient client;
 
+    //TODO(Jack): edit all of the text and images to match the branding we have
+    //TODO(jack): get icons for hypixel minigames
     RPCUpdater(IPCClient client) {
         this.client = client;
 
@@ -42,8 +44,8 @@ public class RPCUpdater {
         RichPresence.Builder builder = new RichPresence.Builder();
 
         client.sendRichPresence(builder
-            .setSmallImage("compass")
-            .setLargeImage("hyperium", "Hyperium Client")
+            /*.setSmallImage("compass") */
+            .setLargeImage("spectre-banner", "Spectre Client")
             .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
             .setDetails("On the main menu")
             .setStartTimestamp(OffsetDateTime.now())
@@ -57,15 +59,15 @@ public class RPCUpdater {
 
             client.sendRichPresence(Hyperium.INSTANCE.getHandlers().getHypixelDetector().isHypixel() ?
                 builder
-                    .setSmallImage("compass")
-                    .setLargeImage("16", "Hypixel Network")
+                    /*.setSmallImage("compass") */
+                    .setLargeImage("spectre-banner", "Hypixel Network")
                     .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
                     .setDetails("In the lobby on hypixel.net")
                     .setStartTimestamp(OffsetDateTime.now())
                     .build() :
                 builder
-                    .setSmallImage("compass")
-                    .setLargeImage("16", "On a server")
+                    /*.setSmallImage("compass")*/
+                    .setLargeImage("spectre-banner", "On a server")
                     .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
                     .setDetails("On a Minecraft server")
                     .setStartTimestamp(OffsetDateTime.now())
@@ -79,8 +81,9 @@ public class RPCUpdater {
             RichPresence.Builder builder = new RichPresence.Builder();
 
             client.sendRichPresence(builder
-                .setSmallImage("compass")
-                .setLargeImage(String.valueOf(event.getMinigame().getId()), event.getMinigame().getScoreName())
+                /*.setSmallImage("compass") */
+                /*.setLargeImage(String.valueOf(event.getMinigame().getId()), event.getMinigame().getScoreName()) */
+                .setLargeImage("spectre-banner")
                 .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
                 .setDetails("Playing " + event.getMinigame().getScoreName() + " on hypixel.net")
                 .setStartTimestamp(OffsetDateTime.now())
@@ -93,8 +96,8 @@ public class RPCUpdater {
         RichPresence.Builder builder = new RichPresence.Builder();
 
         client.sendRichPresence(builder
-            .setSmallImage("compass")
-            .setLargeImage("hyperium", "Hyperium Client")
+            /*.setSmallImage("compass") */
+            .setLargeImage("spectre-banner", "Spectre Client")
             .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
             .setDetails("Playing Singleplayer")
             .setStartTimestamp(OffsetDateTime.now())
@@ -106,8 +109,8 @@ public class RPCUpdater {
         RichPresence.Builder builder = new RichPresence.Builder();
 
         client.sendRichPresence(builder
-            .setSmallImage("compass")
-            .setLargeImage("hyperium", "Hyperium Client")
+            /* .setSmallImage("compass") */
+            .setLargeImage("spectre-banner", "Spectre Client")
             .setState("IGN: " + Minecraft.getMinecraft().getSession().getUsername())
             .setDetails("On the main menu")
             .setStartTimestamp(OffsetDateTime.now())

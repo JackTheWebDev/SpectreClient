@@ -28,7 +28,7 @@ import com.jagrosh.discordipc.exceptions.NoDiscordClientException;
 
 public class DiscordPresence {
 
-    private IPCClient client = new IPCClient(787833842441388072L);
+    private IPCClient client = new IPCClient(787833842441388072L); //JackTheWebDev changed the clientID
 
 
     public void load() {

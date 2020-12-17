@@ -106,7 +106,7 @@ public class GuiHyperiumCredits extends HyperiumGui {
 
     private static void fetch(int tries) {
         try {
-            String content = IOUtils.toString(URI.create("https://api.github.com/repos/HyperiumClient/Hyperium/stats/contributors"), StandardCharsets.UTF_8);
+            String content = IOUtils.toString(URI.create("https://api.github.com/repos/HyperiumClient/Hyperium/stats/contributors"), StandardCharsets.UTF_8); //TODO(JackTheWebDev): Add my name to the list i guess
             JsonParser parser = new JsonParser();
             JsonArray a = parser.parse(content).getAsJsonArray();
             StreamSupport.stream(a.spliterator(), false).map(JsonElement::getAsJsonObject).filter(o -> o.has("total") &
